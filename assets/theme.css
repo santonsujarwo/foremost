@@ -108,6 +108,9 @@ h6 {
 .display-6 {
   font-size: 34px;
 }
+.display-7 {
+  font-size: 28px;
+}
 textarea:focus,
 textarea.form-control:focus,
 input.form-control:focus,
@@ -268,6 +271,23 @@ Site-footer
 }
 .fr-phonenumber {
   font-family: var(--fr-avenirbook);
+}
+@media (min-width: 1024px) {
+  .fr-contactform .pr-break {
+    padding-right: 50px;
+  }
+  .fr-contactform .pl-break {
+    padding-left: 50px;
+  }
+}
+.fr-contactform label {
+  font-family: var(--fr-proximaregular);
+}
+.fr-contactform textarea.form-control {
+  border: 2px solid var(--fr-black);
+}
+.fr-contactform .form-control {
+  border-bottom: 2px solid var(--fr-black);
 }
 /*-----------------------------
 Color
