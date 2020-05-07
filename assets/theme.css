@@ -4,8 +4,9 @@
   --fr-darkgrey: #707070;
   --fr-blue: #304595;
   --fr-bluedark: #0c233f;
+  --fr-bluedeep: #282d66;
   --fr-bluelight: #7cc7d6;
-  --fr-yellow: #304595;
+  --fr-yellow: #ffc903;
   --fr-white: #ffffff;
   --fr-proximaregular: 'Proxima Nova Rg';
   --fr-proximasemibold: 'Proxima Nova Lt';
@@ -99,6 +100,9 @@ h5 {
 h6 {
   font-size: 16px;
 }
+.display-3 {
+  font-size: 84px;
+}
 .display-4 {
   font-size: 46px;
 }
@@ -163,6 +167,9 @@ button:focus {
 .font-weight-regular {
   font-weight: 400;
 }
+.fr-clr-white {
+  color: var(--fr-white);
+}
 .fr-clr-darkgrey {
   color: var(--fr-darkgrey);
 }
@@ -172,11 +179,27 @@ button:focus {
 .fr-clr-darkdeep {
   color: var(--fr-darkdeep);
 }
+.fr-clr-bluedeep {
+  color: var(--fr-bluedeep);
+}
+.fr-clr-bluelight {
+  color: var(--fr-bluelight);
+}
 .bg-bluedark {
   background-color: var(--fr-bluedark);
 }
 .bg-blue {
   background-color: var(--fr-blue);
+}
+.bg-yellow {
+  background-color: var(--fr-yellow);
+}
+#fullpage .section {
+  height: 100vh;
+}
+#fullpage .section h2 {
+  font-family: var(--fr-proximaextrabold);
+  line-height: 84px;
 }
 @media (min-width: 1024px) {
   .fr-services .pr-break {
