@@ -1,10 +1,10 @@
 .hamburger {
   display: block;
-  width: 50px;
-  height: 50px;
+  width: 80px;
+  height: 80px;
   position: fixed;
   top: 0;
-  left: 0;
+  right: 0;
   z-index: 10000;
   padding: 12px;
   -moz-box-sizing: border-box;
@@ -19,12 +19,18 @@
   position: relative;
   margin-top: 7px;
   margin-bottom: 7px;
+   background-image:  url('../../../images/burger-menu.svg') !important;
+   background-repeat: no-repeat;
+   background-position: 20px 0;
+   height: 30px;
 }
-.hamburger__icon, .hamburger__icon:before, .hamburger__icon:after {
+.hamburger__icon:before, .hamburger__icon:after {
+  margin-top: 10px;
+  margin-left: 20px;
   display: block;
-  width: 25px;
-  height: 2px;
-  background-color: #222;
+  width: 30px;
+  height: 4px;
+  background-color: transparent;
   -moz-transition-property: background-color, -moz-transform;
   -o-transition-property: background-color, -o-transform;
   -webkit-transition-property: background-color, -webkit-transform;
@@ -46,9 +52,10 @@
 }
 .hamburger.active .hamburger__icon {
   background-color: transparent;
+  background-image: none !important;
 }
 .hamburger.active .hamburger__icon:before, .hamburger.active .hamburger__icon:after {
-  background-color: #fff;
+  background-color: #304595;
 }
 .hamburger.active .hamburger__icon:before {
   -moz-transform: translateY(7px) rotate(45deg);
@@ -71,7 +78,8 @@
   display: none;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.8);
+  font-family: 'SanFranciscoText-Medium';
+  background: #fff;
   -moz-transform: scale(1.4);
   -ms-transform: scale(1.4);
   -webkit-transform: scale(1.4);
@@ -88,11 +96,13 @@
   overflow-x: hidden;
   -webkit-overflow-scrolling: touch;
 }
+
 .fat-nav__wrapper {
   width: 100%;
   height: 100%;
-  display: table;
-  table-layout: fixed;
+  display: flex;
+  background: url('../../../images/logo-outline-menu.svg') no-repeat bottom left;
+  background-size: 500px;
 }
 .fat-nav.active {
   -moz-transform: scale(1);
@@ -101,19 +111,24 @@
   transform: scale(1);
 }
 .fat-nav ul {
-  display: table-cell;
+  display: flex;
+  flex-direction: column;
   vertical-align: middle;
   margin: 0;
   padding: 0;
 }
 .fat-nav li {
   list-style-type: none;
-  text-align: center;
-  padding: 10px;
-  font-size: 2em;
+  text-align: left;
+  padding: 10px 0;
+  font-size: 28px;
+}
+.fat-nav h4,
+.fat-nav h5{
+  color: #a2a2a3;
 }
 .fat-nav li, .fat-nav li a {
-  color: #fff;
+  color: #000;
 }
 .fat-nav li a {
   text-decoration: none;
