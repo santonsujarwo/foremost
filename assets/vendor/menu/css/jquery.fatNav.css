@@ -103,12 +103,20 @@
   display: flex;
   background: url('../../../images/logo-outline-menu.svg') no-repeat bottom left;
   background-size: 500px;
+  background-attachment: fixed;
+  background-position: 0% 110%;
+}
+@media(max-width:640px){
+  .fat-nav__wrapper {
+    background-size: 200px;
+  }
 }
 .fat-nav.active {
   -moz-transform: scale(1);
   -ms-transform: scale(1);
   -webkit-transform: scale(1);
   transform: scale(1);
+  overflow: hidden;
 }
 .fat-nav ul {
   display: flex;
@@ -120,8 +128,13 @@
 .fat-nav li {
   list-style-type: none;
   text-align: left;
-  padding: 10px 0;
+  padding: 0;
   font-size: 28px;
+}
+@media(max-width: 568px){
+  .fat-nav li{
+    font-size: 18px;
+  }
 }
 .fat-nav h4,
 .fat-nav h5{

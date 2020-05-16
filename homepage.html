@@ -42,7 +42,12 @@
   </header><!--[end:header]-->
    
     <div class="fr-homepage">
-      <div class="section" id="section0" style="background: url(assets/images/slide-1.png) no-repeat right;">
+      <div class="section" id="section0">
+        <video autoplay muted loop id="myVideo">
+  <source src="assets/images/foremost-intro.mp4" type="video/mp4">
+</video>
+      </div>
+      <div class="section" id="section1" style="background: url(assets/images/slide-1.png) no-repeat right;">
         <div class="container">
           <div class="row">
             <div class="col-lg-5">
@@ -58,7 +63,7 @@
           </div>
         </div>
       </div>
-      <div class="section" id="section1">
+      <div class="section" id="section2">
        <div class="container">
           <div class="row">
             <div class="col-lg-5">
@@ -74,7 +79,7 @@
           </div>
         </div>
       </div>
-      <div class="section bg-yellow" id="section2">
+      <div class="section bg-yellow" id="section3">
         <div class="container">
           <div class="row">
             <div class="col-lg-5">
@@ -91,26 +96,12 @@
         </div>
       </div>
     </div>
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-   
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
     <script type="text/javascript" src="assets/vendor/menu/js/jquery.fatNav.min.js"></script>
     <script type="text/javascript" src="assets/vendor/fullpage/fullpage.js"></script>
-    <script>
-    $(document).ready(function(){
-      $.fatNav();
-       var myFullpage = new fullpage('.fr-homepage', {
-        anchors: ['firstPage'],
-        //sectionsColor: ['#C63D0F', '#1BBC9B', '#7E8F7C'],
-        //navigation: true,
-        //navigationPosition: 'right',
-        //navigationTooltips: ['First page', 'Second page', 'Third and last page'],      
-
-    });
-    });
-    </script>
+    <script type="text/javascript" src="assets/vendor/slick/slick.min.js"></script>
+    <script type="text/javascript" src="assets/script.js"></script>
   </body>
 </html>
