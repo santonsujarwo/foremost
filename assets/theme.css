@@ -11,27 +11,13 @@
   --fr-proximaregular: 'Proxima Nova Rg';
   --fr-proximasemibold: 'Proxima Nova Lt';
   --fr-proximaextrabold: 'Proxima Nova Th';
-  --fr-sanfransisco: 'SanFranciscoText-Medium';
-  --fr-avenirbook: 'Avenir LT Std';
-  --fr-biko: 'Biko';
+  /*--fr-sanfransisco:  'SanFranciscoText-Medium';
+	--fr-avenirbook: 'Avenir LT Std';
+    --fr-biko:'Biko';*/
 }
 /*-----------------------------
 Font Face
 -------------------------------*/
-@font-face {
-  font-family: 'Biko';
-  src: url('font/Biko.eot');
-  src: url('font/Biko.eot?#iefix') format('embedded-opentype'), url('font/Biko.woff2') format('woff2'), url('Biko.woff') format('woff'), url('Biko.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'Biko';
-  src: url('Biko-Bold.eot');
-  src: url('Biko-Bold.eot?#iefix') format('embedded-opentype'), url('Biko-Bold.woff2') format('woff2'), url('Biko-Bold.woff') format('woff'), url('Biko-Bold.ttf') format('truetype');
-  font-weight: bold;
-  font-style: normal;
-}
 @font-face {
   font-family: 'Proxima Nova Rg';
   src: url('font/ProximaNova-Regular.eot');
@@ -51,37 +37,6 @@ Font Face
   src: url('font/ProximaNova-Extrabld.eot');
   src: url('font/ProximaNova-Extrabld.eot?#iefix') format('embedded-opentype'), url('font/ProximaNova-Extrabld.woff2') format('woff2'), url('font/ProximaNova-Extrabld.woff') format('woff'), url('font/ProximaNova-Extrabld.ttf') format('truetype');
   font-weight: 800;
-  font-style: normal;
-}
-/*
-@font-face {
-    font-family: 'San Francisco Display';
-    src: url('SanFranciscoDisplay-Regular.eot');
-    src: url('SanFranciscoDisplay-Regular.eot?#iefix') format('embedded-opentype'),
-        url('SanFranciscoDisplay-Regular.woff2') format('woff2'),
-        url('SanFranciscoDisplay-Regular.woff') format('woff'),
-        url('SanFranciscoDisplay-Regular.ttf') format('truetype');
-    font-weight: 200;
-    font-style: normal;
-}
-*/
-@font-face {
-  font-family: 'Avenir LT Std';
-  src: url('font/AvenirLTStd-Book.eot');
-  src: url('font/AvenirLTStd-Book.eot?#iefix') format('embedded-opentype'), url('font/AvenirLTStd-Book.woff2') format('woff2'), url('font/AvenirLTStd-Book.woff') format('woff'), url('font/AvenirLTStd-Book.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'SanFranciscoText-Medium';
-  src: url('font/SanFranciscoText-Medium.woff2') format('woff2'), url('font/SanFranciscoText-Medium.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'PTSerif';
-  src: url('font/PTSerif.ttc') format('ttc');
-  font-weight: normal;
   font-style: normal;
 }
 /*-----------------------------
@@ -152,6 +107,9 @@ button:focus {
   -webkit-text-stroke-color: black;
   font-family: var(--fr-proximaextrabold);
 }
+body {
+  font-family: var(--fr-proximaregular);
+}
 .text-headunderline {
   position: relative;
 }
@@ -211,18 +169,22 @@ a:hover {
 body {
   overflow-x: hidden;
 }
-.fr-homepage #myVideo {
-  position: fixed;
-  right: 0;
-  bottom: 0;
-  min-width: 100%;
-  min-height: 100%;
+.navbar-brand img {
+  height: 40px;
 }
-@media (max-width: 768px) {
-  .fr-homepage #section1 {
-    background-size: 70% !important;
-    background-position: 100% 100% !important;
+@media (max-width: 667px) {
+  .navbar-brand img {
+    height: 22px;
   }
+}
+/*---------------------------
+homepage
+-----------------------------*/
+.fr-homepage #section4 h2 a {
+  font-size: 82px;
+  font-family: var(--fr-proximaextrabold);
+  color: #3a50a4;
+  text-decoration: underline;
 }
 .fr-homepage .section {
   height: 100vh !important;
@@ -231,39 +193,53 @@ body {
   font-size: 42px;
   font-family: var(--fr-proximasemibold);
 }
-@media (max-width: 667px) {
-  .fr-homepage .section .fr-number-work {
-    font-size: 28px;
-  }
-}
 .fr-homepage .section .fr-title-work {
   font-family: var(--fr-proximaextrabold);
   line-height: 84px;
   margin-left: -5px;
   font-size: 84px;
 }
-@media (max-width: 667px) {
-  .fr-homepage .section .fr-title-work {
-    font-size: 42px;
-    line-height: 38px;
-  }
-}
 .fr-homepage .section .fr-desc-work {
-  font-family: 'PTSerif';
   font-size: 24px;
+  line-height: 24px;
+  margin-bottom: 100px;
 }
 .fr-homepage .section .fr-meta-work {
+  font-size: 24px;
   color: #494949;
 }
 .fr-homepage hr {
   background-color: var(--fr-darkgrey);
   width: 150px;
-  height: 2px;
+  height: 0.1px;
+  margin-top: 48px;
+  margin-bottom: 42px;
 }
-@media (max-width: 1024px) {
-  .fr-homepage #section0 {
+@media (max-width: 768px) {
+  .fr-homepage #section1 {
+    background-size: 70% !important;
     background-position: 100% 100% !important;
-    background-size: 60% !important;
+  }
+  .fr-homepage .section .fr-number-work {
+    font-size: 20px;
+  }
+  .fr-homepage .section .fr-title-work {
+    font-size: 50px;
+    line-height: 45px;
+  }
+  .fr-homepage .section .fr-desc-work {
+    font-size: 18px;
+    margin-bottom: 60px;
+  }
+  .fr-homepage .section .fr-meta-work {
+    font-size: 15px;
+  }
+  .fr-homepage .section hr {
+    margin-top: 30px;
+    margin-bottom: 24px;
+  }
+  .fr-homepage .section img.brand {
+    width: 70%;
   }
 }
 .fr-agency .page-header h2 {
@@ -765,12 +741,28 @@ Contact
 /*-----------------------------
 Site-footer
 -------------------------------*/
+#section0 {
+  height: inherit !important;
+  overflow: inherit;
+}
+#section0 .fp-tableCell,
+#section0 .fp-scrollable {
+  /*height: inherit !important;
+        overflow: initial !important;*/
+}
+#section0 .container {
+  padding-top: 50px;
+}
+#section0 .site-footer {
+  padding-top: 0;
+}
 .site-footer {
   background-color: var(--fr-bluedark);
   color: var(--fr-white);
   font-size: 20px;
-  padding: 100px 0;
+  padding-top: 100px;
   font-family: var(--fr-proximaregular);
+  height: 100vh;
 }
 @media (max-width: 1024px) {
   .site-footer {
@@ -857,6 +849,11 @@ Site-footer
 .fr-copyright {
   font-size: 16px;
   padding-top: 60px;
+}
+@media (max-width: 667px) {
+  .fr-copyright {
+    padding-top: 30px;
+  }
 }
 .fr-phonenumber {
   font-family: var(--fr-avenirbook);

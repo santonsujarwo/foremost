@@ -1,13 +1,12 @@
 $(document).ready(function(){
       $.fatNav();
+      
       var myFullpage = new fullpage('.fr-homepage', {
-        anchors: ['firstPage'],
-        //sectionsColor: ['#C63D0F', '#1BBC9B', '#7E8F7C'],
-        //navigation: true,
-        //navigationPosition: 'right',
-        //navigationTooltips: ['First page', 'Second page', 'Third and last page'],      
-
+         anchors: ['first', 'second', 'third', 'fourth'],
+        // sectionsColor: ['', '', '', '#0c233f'],
+        scrollOverflow: true
     });
+      //$('#pagepiling').pagepiling();
       $('.center').slick({
 
         infinite: true,
