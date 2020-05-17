@@ -242,7 +242,7 @@ html.fp-enabled,
     border: 0;
 }
 @media(max-width: 768px){
-   .fp-tableCell{
+   .fp-tableCell .container{
     padding-top: 70px;
    } 
 }
