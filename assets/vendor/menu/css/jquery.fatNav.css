@@ -131,11 +131,11 @@
 .fat-nav h5,
 .fat-nav h5 a{
   color: #a2a2a3;
-  text-align: center;
   font-weight: 600;
 }
 .fat-nav h5{
   font-size: 18px;
+  color: #a2a2a3;
 }
 .fat-nav li{
   padding: 4px 0;
@@ -161,11 +161,13 @@
   .fat-nav li{
     text-align: center;
   }
-
+  .fat-nav h4, .fat-nav h5, .fat-nav h5 a{
+    text-align: center;
+  }
 }
 @media(max-width: 568px){
   .fat-nav li{
-    font-size: 18px;
+   
   }
 }
 
